@@ -40,6 +40,7 @@ If a team member doesn't have the 'Agile SCRUM for Trello boards' extension inst
 
 Links & Resources
 ------------------
+- Google Chrome Store: https://chrome.google.com/webstore/detail/agile-scrum-for-trello-bo/njmflagahgdhopbcdilgahjlfiecakpe?hl=en
 - Source code: https://github.com/luckyshot/agilescrumfortrello
 - Issue tracker: https://github.com/luckyshot/agilescrumfortrello/issues
 - Blog post: http://xaviesteve.com/5109/agile-scrum-trello-boards/
@@ -50,7 +51,7 @@ Push Requests
 
 Please read this before submitting your Push Requests:
 
-- Features that are not directly related to the extension will not be considered
+- Features that are not directly related to Agile SCRUM and Trello will not be considered
 - This extension is cool because it is not intrusive to its users, consider this before developing bells and whistles
 - New features should be developed in a way that they don't become annoying to users without the plugin (i.e. story points become a number inside a parenthesis)
 - Code in jQuery or vanilla JavaScript and keep the code as tiny as possible
