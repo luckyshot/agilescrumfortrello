@@ -11,19 +11,19 @@
 			],
 			"js": [
 				"jquery.js",
-				"agilescrumtrello.js"
+				"agilescrumfortrello.js"
 			],
 			"css": [
-				"agilescrumtrello.css"
+				"agilescrumfortrello.css"
 			]
 		}
 	],
 	"manifest_version" : 2,
 	"icons": {
-		"16": "agilescrumtrello-16.png",
-		"32": "agilescrumtrello-32.png",
-		"24": "agilescrumtrello-24.png",
-		"48": "agilescrumtrello-48.png",
-		"128": "agilescrumtrello-128.png"
+		"16": "agilescrumfortrello-16.png",
+		"32": "agilescrumfortrello-32.png",
+		"24": "agilescrumfortrello-24.png",
+		"48": "agilescrumfortrello-48.png",
+		"128": "agilescrumfortrello-128.png"
 	}
 }
