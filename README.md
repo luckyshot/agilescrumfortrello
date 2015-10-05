@@ -43,7 +43,7 @@ Links & Resources
 - Google Chrome Store: https://chrome.google.com/webstore/detail/agile-scrum-for-trello-bo/njmflagahgdhopbcdilgahjlfiecakpe?hl=en
 - Source code: https://github.com/luckyshot/agilescrumfortrello
 - Issue tracker: https://github.com/luckyshot/agilescrumfortrello/issues
-- Blog post: http://xaviesteve.com/5109/agile-scrum-trello-boards/
+- Blog post + Screenshots: http://xaviesteve.com/5109/agile-scrum-trello-boards/
 
 
 Push Requests
@@ -51,6 +51,8 @@ Push Requests
 
 Please read this before submitting your Push Requests:
 
+- Follow the same SCSS/JavaScript coding conventions (and use TABS)
+- Test and run your code through JsHint before pushing
 - Features that are not directly related to Agile SCRUM and Trello will not be considered
 - This extension is cool because it is not intrusive to its users, consider this before developing bells and whistles
 - New features should be developed in a way that they don't become annoying to users without the plugin (i.e. story points become a number inside a parenthesis)
@@ -60,6 +62,10 @@ Please read this before submitting your Push Requests:
 
 Changelog
 ------------------
+#### 1.4.3
+- Fixed issue where it wouldn't detect story points longer than 3 characters (0/10.5)
+- Changed method of detecting changes
+
 #### 1.4.2
 - Released Source Code under GPL license https://github.com/luckyshot/agilescrumfortrello
 - You can add the '#' symbol inside tags
