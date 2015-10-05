@@ -1,0 +1,29 @@
+{
+	"name": "Agile SCRUM for Trello boards",
+	"short_name": "SCRUM Trello",
+	"description": "Super-charge your Trello boards with Story Points, Projects and Progress bars",
+	"version": "1.4.2",
+	"author": "Xavi Esteve",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://trello.com/b/*"
+			],
+			"js": [
+				"jquery.js",
+				"agilescrumtrello.js"
+			],
+			"css": [
+				"agilescrumtrello.css"
+			]
+		}
+	],
+	"manifest_version" : 2,
+	"icons": {
+		"16": "agilescrumtrello-16.png",
+		"32": "agilescrumtrello-32.png",
+		"24": "agilescrumtrello-24.png",
+		"48": "agilescrumtrello-48.png",
+		"128": "agilescrumtrello-128.png"
+	}
+}
