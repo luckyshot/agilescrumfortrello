@@ -34,7 +34,7 @@ AST = (function ( A ) {
 		regexFractionTotal 	= /\/[0-9\.]{1,6}\)/,
 		regexNumberTotal 	= /\([0-9\.]{1,5}\)/,
 		regexNumeric 		= /[0-9\.]+/,
-		regexProjectTag 			= /\[([a-zA-Z0-9 \_\-\.\#]*)\]/g,
+		regexProjectTag 	= /\[([a-zA-ZáãàâäéèẽêëíìĩîïóòõôöúùũûüçÁÃÀÂÄÉÈẼÊËÍÌĨÎÏÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
 		regexHeader			= />\*{3} .+ \*{3}$/i,
 
 		storyPointDecimals 	= 1,
