@@ -340,7 +340,7 @@ AST = (function ( A ) {
 			{
 				r += (s.charAt(i).charCodeAt() * 900);
 			}
-			return 'hsla('+(r % 256)+',50%,60%,1)';
+			return 'hsla('+(r % 256)+',50%,40%,1)';
 		};
 
 
@@ -359,4 +359,3 @@ AST.init();
 }); // jQuery document ready
 
 }( document ));
-
