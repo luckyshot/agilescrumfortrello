@@ -40,6 +40,7 @@ AST = (function ( A ) {
 		storyPointDecimals 	= 1,
 
 		bodyColor 			= false,
+		bodyWidth           = 0,
 		cssStoryPoints 		= '',
 
 		runTimer 			= false,
@@ -204,7 +205,8 @@ AST = (function ( A ) {
 					if ( currentCardTotal > 0 )
 					{
 						// Display Card progress bar
-						currentCardElement.prepend( '<div class="scrum-card-progress' + cssStoryPoints + '" style="background-color:' + bodyColor + ';width:' + ( currentCardDone / currentCardTotal * 100 ) + '%"></div>');
+						bodyWidth = currentCardDone / currentCardTotal * 100;
+						currentCardElement.prepend( '<div class="scrum-card-progress' + cssStoryPoints + '" style="background-color:' + bodyColor + ';width:' + ( bodyWidth <= 100 ? bodyWidth : 100 ) + '%"></div>');
 
 						// Increase card font size depending on its SP
 						$( currentCardElement[0] )
@@ -249,7 +251,8 @@ AST = (function ( A ) {
 				// display List progress bar
 				if ( currentListTotal > 0 )
 				{
-					currentListElement.parent('.list').prepend('<div class="scrum-list-progress"  style="background-color:' + bodyColor + ';width:' + ( currentListDone / currentListTotal * 100 ) + '%"></div>');
+					bodyWidth = currentListDone / currentListTotal * 100;
+					currentListElement.parent('.list').prepend('<div class="scrum-list-progress"  style="background-color:' + bodyColor + ';width:' + ( bodyWidth <= 100 ? bodyWidth : 100 ) + '%"></div>');
 				}
 
 				// now reset it for the next one
