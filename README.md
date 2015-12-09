@@ -10,6 +10,8 @@ Agile SCRUM for Trello boards gives super-powers to your Trello boards by enabli
 
 Instructions
 ------------------
+
+[![Join the chat at https://gitter.im/luckyshot/agilescrumfortrello](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/luckyshot/agilescrumfortrello?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 There's no need to set up anything! This extension is made to be simple, install it and start giving super powers to your Trello.
 
 Add Story Points to a card by typing the number in parenthesis:
