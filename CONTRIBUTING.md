@@ -9,4 +9,4 @@ Please read this before submitting your Push Requests:
 - Features that are not directly related to Agile SCRUM and Trello will not be considered
 - This extension is cool because it is not intrusive to its users, consider this before developing bells and whistles
 - New features should be developed in a way that they don't become annoying to users without the plugin (i.e. story points become a number inside a parenthesis so you can still see what's going on when you don't have the extension installed)
-- Code in jQuery or vanilla JavaScript and keep the code as tiny and performant as possible
+- Code in jQuery or vanilla JavaScript and keep the code as tiny, readable and performant as possible
