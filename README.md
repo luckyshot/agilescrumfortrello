@@ -50,6 +50,10 @@ Links & Resources
 
 Changelog
 ------------------
+
+### 1.4.4
+- Improved change detection through DOMSubtreeModified (thanks to JorgeBoscan)
+
 #### 1.4.3
 - Fixed issue where it wouldn't detect story points longer than 3 characters (0/10.5)
 - Changed method of detecting changes

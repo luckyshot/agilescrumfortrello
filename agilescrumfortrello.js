@@ -36,6 +36,7 @@ AST = (function ( A ) {
 		regexNumeric 		= /[0-9\.]+/,
 		regexProjectTag 	= /\[([a-zA-ZáãàâäéèẽêëíìĩîïóòõôöúùũûüçÁÃÀÂÄÉÈẼÊËÍÌĨÎÏÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
 		regexHeader			= />\*{3} .+ \*{3}$/i,
+		regexShortLink 		= /c\/([^/]+)\/.+/g,
 
 		storyPointDecimals 	= 1,
 
@@ -80,7 +81,26 @@ AST = (function ( A ) {
 		 */
 		var _start = function()
 		{
+			var cardId = null,
+				cardDetailOpen = null;
+				
 			_run();
+
+			$('.window-wrapper').bind("DOMSubtreeModified",function(){
+			if ( window.location.href.match(regexShortLink) && !cardDetailOpen )
+			{
+				cardId = regexShortLink.exec( window.location.href )[1];
+				regexShortLink.lastIndex = 0;
+				cardDetailOpen = true;
+			} 
+			else if ( !window.location.href.match( regexShortLink ) && cardDetailOpen )
+			{
+				cardDetailOpen = false;
+				_run();
+			}
+		});
+
+
 
 			runTimer = setInterval(function(){
 				_checkForChanges();

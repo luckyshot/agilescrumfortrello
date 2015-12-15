@@ -2,7 +2,7 @@
 	"name": "Agile SCRUM for Trello boards",
 	"short_name": "SCRUM Trello",
 	"description": "Super-charge your Trello boards with Story Points, Projects and Progress bars",
-	"version": "1.4.3",
+	"version": "1.4.4",
 	"author": "Xavi Esteve",
 	"content_scripts": [
 		{
