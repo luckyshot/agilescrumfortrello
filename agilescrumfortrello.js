@@ -34,7 +34,7 @@ AST = (function ( A ) {
 		regexFractionTotal 	= /\/[0-9\.]{1,6}\)/,
 		regexNumberTotal 	= /\([0-9\.]{1,5}\)/,
 		regexNumeric 		= /[0-9\.]+/,
-		regexProjectTag 	= /\[([a-zA-ZáãàâäéèẽêëíìĩîïóòõôöúùũûüçÁÃÀÂÄÉÈẼÊËÍÌĨÎÏÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
+		regexProjectTag 	= /\[([\u3400-\uFAFF\u3040-\u30ff\uff65-\uffdca-zA-ZáãàâäéèẽêëíìĩîïóòõôöúùũûüçÁÃÀÂÄÉÈẼÊËÍÌĨÎÏÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
 		regexHeader			= />\*{3} .+ \*{3}$/i,
 		regexShortLink 		= /c\/([^/]+)\/.+/g,
 
@@ -83,7 +83,7 @@ AST = (function ( A ) {
 		{
 			var cardId = null,
 				cardDetailOpen = null;
-				
+
 			_run();
 
 			$('.window-wrapper').bind("DOMSubtreeModified",function(){
@@ -92,7 +92,7 @@ AST = (function ( A ) {
 				cardId = regexShortLink.exec( window.location.href )[1];
 				regexShortLink.lastIndex = 0;
 				cardDetailOpen = true;
-			} 
+			}
 			else if ( !window.location.href.match( regexShortLink ) && cardDetailOpen )
 			{
 				cardDetailOpen = false;
