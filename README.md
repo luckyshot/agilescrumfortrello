@@ -46,6 +46,9 @@ Links & Resources
 - Blog post + Screenshots: http://xaviesteve.com/5109/agile-scrum-trello-boards/
 
 
+Note from the Developer
+------------------
+I am currently founding a startup which leads me to a very busy life. While I read all the issues and emails you guys send me, I can't reply to everyone. The project is Free and Open Sourced so anyone can participate, please feel free to submit any Pull Requests and I will approve them quickly.
 
 
 Changelog
