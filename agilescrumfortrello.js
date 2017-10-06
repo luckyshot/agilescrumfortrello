@@ -335,7 +335,11 @@ AST = (function ( A ) {
 		 */
 		var _formatCardProjectTag = function( match )
 		{
-			return '<small class="scrum-card-project" style="background:' + _stringToColor( match ) + '">' + match.replace( /\[|\]/g, '' ).toUpperCase() + '</small>';
+			var matches = match.split("__");
+			var color = _stringToColor( matches[0] );
+			if (typeof matches[1] !== 'undefined')
+				color = matches[1];
+			return '<small class="scrum-card-project" style="background:' + color.replace( /\[|\]/g, '' ) + '">' + matches[0].replace( /\[|\]/g, '' ).toUpperCase() + '</small>';
 		};
 
 
