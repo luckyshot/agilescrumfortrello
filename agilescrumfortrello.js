@@ -131,7 +131,7 @@ AST = (function ( A ) {
 		var _run = function()
 		{
 			// Get body color
-			bodyColor = ( $('body').css('background-color') && !$('body').hasClass('body-custom-board-background') ) ? $('body').css('background-color') : 'rgb(55, 158, 90)';
+			bodyColor = ( $('#classic-body').css('background-color') && !$('#classic-body').hasClass('body-custom-board-background') ) ? $('#classic-body').css('background-color') : 'rgb(55, 158, 90)';
 
 			// Clean previous elements
 			_removeElements();
