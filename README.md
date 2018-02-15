@@ -46,6 +46,16 @@ Links & Resources
 - Blog post + Screenshots: http://xaviesteve.com/5109/agile-scrum-trello-boards/
 
 
+Installation
+------------------.
+You can download the published version in the [Google Chrome Store](https://chrome.google.com/webstore/detail/agile-scrum-for-trello-bo/njmflagahgdhopbcdilgahjlfiecakpe?hl=en) which is the easiest way yet it may be a few versions behind or:
+- [Download the code](https://github.com/luckyshot/agilescrumfortrello/archive/master.zip) (if you know how to use Git, you'll want to clone the repo somewhere in your computer instead of downloading)
+- In Google Chrome open the menu > _More Tools_ > _Extensions_
+- Check the _Developer mode_ checkbox
+- Drag and drop the _agilescrumfortrello_ folder (the one that has the _manifest.json_ file in it)
+- Reload the Trello page if already open
+
+
 Note from the Developer
 ------------------
 I am currently founding a startup which leads me to a very busy life. While I read all the issues and emails you guys send me, I can't reply to everyone. The project is Free and Open Sourced so anyone can participate, please feel free to submit any Pull Requests and I will approve them quickly.
