@@ -47,7 +47,7 @@ Links & Resources
 
 
 Installation
-------------------.
+------------------
 You can download the published version in the [Google Chrome Store](https://chrome.google.com/webstore/detail/agile-scrum-for-trello-bo/njmflagahgdhopbcdilgahjlfiecakpe?hl=en) which is the easiest way yet it may be a few versions behind or:
 - [Download the code](https://github.com/luckyshot/agilescrumfortrello/archive/master.zip) (if you know how to use Git, you'll want to clone the repo somewhere in your computer instead of downloading)
 - In Google Chrome open the menu > _More Tools_ > _Extensions_
