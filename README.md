@@ -63,8 +63,11 @@ I am currently founding a startup which leads me to a very busy life. While I re
 
 Changelog
 ------------------
+#### 1.4.5
+- Fixed Progress bar color not showing (thanks @danicg)
+- Custom tag colors by adding "red" or "#ff0" suffix (thanks @rudwolf)
 
-### 1.4.4
+#### 1.4.4
 - Improved change detection through DOMSubtreeModified (thanks to JorgeBoscan)
 
 #### 1.4.3
