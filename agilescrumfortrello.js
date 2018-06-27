@@ -34,7 +34,7 @@ AST = (function ( A ) {
 		regexFractionTotal 	= /\/[0-9\.]{1,6}\)/,
 		regexNumberTotal 	= /\([0-9\.]{1,5}\)/,
 		regexNumeric 		= /[0-9\.]+/,
-		regexProjectTag 	= /\[([\u3400-\uFAFF\u3040-\u30ff\uff65-\uffdca-zA-ZáãàâäéèẽêëíìĩîïóòõôöúùũûüçÁÃÀÂÄÉÈẼÊËÍÌĨÎÏÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
+		regexProjectTag 	= /\[([\u3400-\uFAFF\u3040-\u30ff\uff65-\uffdca-zA-ZæÆåáãàâäéèẽêëíìĩîïøóòõôöúùũûüçÅÁÃÀÂÄÉÈẼÊËÍÌĨÎÏØÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
 		regexHeader			= />\*{3} .+ \*{3}$/i,
 		regexShortLink 		= /c\/([^/]+)\/.+/g,
 
