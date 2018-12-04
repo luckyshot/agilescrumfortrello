@@ -43,7 +43,7 @@ Links & Resources
 - Google Chrome Store: https://chrome.google.com/webstore/detail/agile-scrum-for-trello-bo/njmflagahgdhopbcdilgahjlfiecakpe?hl=en
 - Source code: https://github.com/luckyshot/agilescrumfortrello
 - Issue tracker: https://github.com/luckyshot/agilescrumfortrello/issues
-- Blog post + Screenshots: http://xaviesteve.com/5109/agile-scrum-trello-boards/
+- Blog post + Screenshots: https://xaviesteve.com/5109/agile-scrum-trello-boards/
 
 
 Note from the Developer
