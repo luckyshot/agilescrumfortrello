@@ -149,7 +149,10 @@ AST = (function ( A ) {
 					// if the card is the textbox then ignore it
 					if ( _isCardATextBox( currentCardElement ) ) { return -2; }
 
-
+					// if the card is hidden then ignore it
+					if (currentCardElement.is(":hidden")) {
+						return -2;
+					}
 
 					// Reset title
 					if (  !$( currentCardElement ).find('.list-card-title').html().match(/<small /g) )
