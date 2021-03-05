@@ -14,17 +14,21 @@
 
 There's no need to set up anything! This extension is made to be simple, install it and start giving super powers to your Trello.
 
-Add Story Points to a card by typing the number in parenthesis:
-"**(3)** Design new homepage header"
+- Add Story Points to a card by typing the number in parenthesis:
 
-Track time spent on each card:
-"**(1/3)** Design new homepage header"
+     "**(3)** Design new homepage header"
 
-Assign a card to a Project by writing it in square braquets:
-"**[dev]** Implement Ads in footer"
+- Track time spent on each card:
 
-Create a Header Separator by creating a new card with three asterisks at the start and end:
-"*** Sprint 3 ***"
+     "**(1/3)** Design new homepage header"
+
+- Assign a card to a Project by writing it in square braquets:
+
+     "**[dev]** Implement Ads in footer"
+
+- Create a Header Separator by creating a new card with three asterisks at the start and end:
+
+     "*** Sprint 3 ***"
 
 You can add as many tags as needed. Tags will be colored automatically in a random color.
 
