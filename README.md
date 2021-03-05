@@ -1,5 +1,9 @@
 # Agile SCRUM for Trello
 
+
+![Agile SCRUM for Trello Chrome extension](https://user-images.githubusercontent.com/141241/110185336-655c7000-7e12-11eb-956c-153f3625ed4a.jpg)
+
+
 ### Agile SCRUM for Trello boards gives super-powers to your Trello boards by enabling SCRUM features:
 
 - **STORY POINTS**: Set Story Points for Trello Cards
@@ -62,9 +66,14 @@ You can download the published version in the [Google Chrome Store](https://chro
 - Reload the Trello page if already open
 
 
-#### Note from the Developer
+## Screenshots
 
-_I am currently founding a startup which leads me to a very busy life. While I read all the issues and emails you guys send me, I can't reply to everyone. The project is Free and Open Sourced so anyone can participate, please feel free to submit any Pull Requests, I review and approve them quickly._
+![Agile SCRUM for Trello plugin](https://user-images.githubusercontent.com/141241/110185418-9472e180-7e12-11eb-84c3-63531df0f8e2.jpg)
+
+![Agile SCRUM for Trello](https://user-images.githubusercontent.com/141241/110185300-5249a000-7e12-11eb-9fe8-3821dddf2ea4.jpg)
+
+![Agile SCRUM for Trello browser extension](https://user-images.githubusercontent.com/141241/110185395-80c77b00-7e12-11eb-9e23-f3b6cee60f78.jpg)
+
 
 
 ## Changelog
@@ -148,3 +157,9 @@ _I am currently founding a startup which leads me to a very busy life. While I r
 #### 1.1.6
 - Added extension to Google Chrome Store
 - Bug fixes
+
+
+#### Note from the Developer
+
+_I am currently founding a startup which leads me to a very busy life. While I read all the issues and emails you guys send me, I can't reply to everyone. The project is Free and Open Sourced so anyone can participate, please feel free to submit any Pull Requests, I review and approve them quickly._
+
