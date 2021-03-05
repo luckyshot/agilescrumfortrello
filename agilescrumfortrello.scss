@@ -18,12 +18,15 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 */
-$color-primary: rgb(55, 158, 90);
-$color-overrun: #5C001C;
-$color-perfect: #274D01;
-$color-grey: #666;
+body {
+	--colorPrimary: rgb(55, 158, 90);
+	--colorOverrun: #5C001C;
+	--colorPerfect: #274D01;
+	--colorGrey: #666;
+	--colorTextShadow: #fff;
 
-$border-radius: 3px;
+	--borderRadius: 3px;
+}
 
 .scrum-light {
 	opacity: 0.7;
@@ -37,8 +40,8 @@ $border-radius: 3px;
 	display: inline-block;
 	padding: 2px;
 	background: #e3e3e3;
-	border-radius: $border-radius;
-	color: $color-grey;
+	border-radius: var(--borderRadius);
+	color: var(--colorGrey);
 	line-height: 1em;
 }
 .scrum-list-progress {
@@ -46,7 +49,7 @@ $border-radius: 3px;
 	top: 0;
 	left: 0;
 	height: 100%;
-	background: $color-primary;
+	background: var(--colorPrimary);
 	opacity: 0.3;
 	z-index: 0;
 }
@@ -55,14 +58,13 @@ $border-radius: 3px;
 	top: 0;
 	left: 0;
 	height: 100%;
-	background: $color-primary;
+	background: var(--colorPrimary);
 	opacity: 0.2;
 	z-index: -1;
-
-	&.overrun {
-		color: $color-overrun;
-	}
 }
+	.scrum-card-progress.overrun {
+		color: var(--colorOverrun);
+	}
 .scrum-card-project {
 	display: inline-block;
 	padding: 2px 3px;
@@ -80,19 +82,18 @@ $border-radius: 3px;
 	padding: 2px;
 	line-height: 1em;
 	vertical-align: middle;
-	border-radius: $border-radius;
+	border-radius: var(--borderRadius);
 	color: #555;
 	font-size: 12px;
-	text-shadow: 0 0 2px white;
+	text-shadow: 0 0 2px var(--colorTextShadow);
 	opacity: 0.6;
-
-	&.overrun {
-		color: $color-overrun;
-	}
-	&.perfect {
-		color: $color-perfect;
-	}
 }
+	.scrum-card-points.overrun {
+		color: var(--colorOverrun);
+	}
+	.scrum-card-points.perfect {
+		color: var(--colorPerfect);
+	}
 .list-card.scrum-card-header{
 	text-align: center;
 	background: transparent;
