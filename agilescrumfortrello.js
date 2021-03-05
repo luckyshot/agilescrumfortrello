@@ -27,38 +27,38 @@ $( d ).ready(function(){
 AST = (function ( A ) {
 
 	var appName 				= 'Agile SCRUM for Trello boards',
-		appVersion 				= '1.4.3',
+		appVersion				= '1.4.6',
 
 		regexFraction 			= /\([0-9\.]{1,6}\/[0-9\.]{1,6}\)/,
 		regexFractionDone 		= /\([0-9\.]{1,6}\//,
-		regexFractionTotal 		= /\/[0-9\.]{1,6}\)/,
+		regexFractionTotal		= /\/[0-9\.]{1,6}\)/,
 		regexCheckboxDone		= /[0-9]{1,6}\//,
 		regexCheckboxTotal		= /\/[0-9]{1,6}/,
 		regexNumberTotal 		= /\([0-9\.]{1,5}\)/,
 		regexNumeric 			= /[0-9\.]+/,
 		regexProjectTag 		= /\[([\u3400-\uFAFF\u3040-\u30ff\uff65-\uffdca-zA-ZæÆåáãàâäéèẽêëíìĩîïøóòõôöúùũûüçÅÁÃÀÂÄÉÈẼÊËÍÌĨÎÏØÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
 		regexHeader				= />\*{3} .+ \*{3}$/i,
-		regexShortLink 			= /c\/([^/]+)\/.+/g,
+		regexShortLink			= /c\/([^/]+)\/.+/g,
 
 		storyPointDecimals 		= 1,
 
 		bodyColor 				= false,
-		bodyWidth           	= 0,
-		cssStoryPoints 			= '',
+		bodyWidth				= 0,
+		cssStoryPoints			= '',
 
 		runTimer 				= false,
 		runTimerInterval 		= 5000,
 		runTimerChecksum 		= 0,
 
-		currentListElement 		= false,
-		currentListDone 		= 0,
-		currentListTotal 		= 0,
+		currentListElement		= false,
+		currentListDone			= 0,
+		currentListTotal		= 0,
 
 		currentHeaderElement	= false,
 		currentHeaderDone 		= 0,
-		currentHeaderTotal 		= 0,
+		currentHeaderTotal		= 0,
 
-		currentCardElement 		= false,
+		currentCardElement		= false,
 		currentCardDone 		= 0,
 		currentCardTotal 		= 0,
 		currentCardRemainder	= 0,
