@@ -1,25 +1,27 @@
-Agile SCRUM for Trello boards gives super-powers to your Trello boards by enabling SCRUM features:
+# Agile SCRUM for Trello
 
-- STORY POINTS: Set Story Points for Trello Cards
-- TIME SPENT: Set time spent on tasks.
-- TAGS: Group Cards into tags, User Stories or projects, these are colored automagically to save you time.
-- PROGRESS BARS: Visualize your Sprint progress instantly with unobstrusive background progress bars on both cards and lists.
-- HEADER SEPARATORS: Use header separators to group cards inside lists.
-- VISUAL AIDS: Cards with more Story Points have a slightly increased font size so you can distinguish bigger from smaller tasks at a glance.
+### Agile SCRUM for Trello boards gives super-powers to your Trello boards by enabling SCRUM features:
+
+- **STORY POINTS**: Set Story Points for Trello Cards
+- **TIME SPENT**: Set time spent on tasks.
+- **TAGS**: Group Cards into tags, User Stories or projects, these are colored automagically to save you time.
+- **PROGRESS BARS**: Visualize your Sprint progress instantly with unobstrusive background progress bars on both cards and lists.
+- **HEADER SEPARATORS**: Use header separators to group cards inside lists.
+- **VISUAL AIDS**: Cards with more Story Points have a slightly increased font size so you can distinguish bigger from smaller tasks at a glance.
 
 
-Instructions
-------------------
+## Instructions
+
 There's no need to set up anything! This extension is made to be simple, install it and start giving super powers to your Trello.
 
 Add Story Points to a card by typing the number in parenthesis:
-"(3) Design new homepage header"
+"**(3)** Design new homepage header"
 
 Track time spent on each card:
-"(1/3) Design new homepage header"
+"**(1/3)** Design new homepage header"
 
 Assign a card to a Project by writing it in square braquets:
-"[dev] Implement Ads in footer"
+"**[dev]** Implement Ads in footer"
 
 Create a Header Separator by creating a new card with three asterisks at the start and end:
 "*** Sprint 3 ***"
@@ -31,23 +33,23 @@ Both Story Points and Tags can be defined anywhere in the card's text, it's usua
 At the top right of the Lists and Cards you can see how many story points have been completed and how many there are in total.
 
 
-Compatibility
-------------------
+## Compatibility
+
 If a team member doesn't have the 'Agile SCRUM for Trello boards' extension installed he will still see be able to see Story Points and Projects as well as modify them (he won't see colors or progress bars). You can install/uninstall the extension at any time without loosing any data too.
 
 'Agile SCRUM for Trello boards' is the fastest and with the best performance of all similar extensions and at simply 2KB of code, a seamless extension to have installed, even for slow computers or for those users who want Chrome to work fast and are concerned on having too many extensions, this extension has such a tiny footprint that goes unnoticeable.
 
 
-Links & Resources
-------------------
+## Links & Resources
+
 - Google Chrome Store: https://chrome.google.com/webstore/detail/agile-scrum-for-trello-bo/njmflagahgdhopbcdilgahjlfiecakpe?hl=en
 - Source code: https://github.com/luckyshot/agilescrumfortrello
 - Issue tracker: https://github.com/luckyshot/agilescrumfortrello/issues
 - Blog post + Screenshots: https://xaviesteve.com/5109/agile-scrum-trello-boards/
 
 
-Installation
-------------------
+## Installation
+
 You can download the published version in the [Google Chrome Store](https://chrome.google.com/webstore/detail/agile-scrum-for-trello-bo/njmflagahgdhopbcdilgahjlfiecakpe?hl=en) which is the easiest way yet it may be a few versions behind or:
 - [Download the code](https://github.com/luckyshot/agilescrumfortrello/archive/master.zip) (if you know how to use Git, you'll want to clone the repo somewhere in your computer instead of downloading)
 - In Google Chrome open the menu > _More Tools_ > _Extensions_
@@ -56,13 +58,13 @@ You can download the published version in the [Google Chrome Store](https://chro
 - Reload the Trello page if already open
 
 
-Note from the Developer
-------------------
-I am currently founding a startup which leads me to a very busy life. While I read all the issues and emails you guys send me, I can't reply to everyone. The project is Free and Open Sourced so anyone can participate, please feel free to submit any Pull Requests and I will approve them quickly.
+#### Note from the Developer
+
+_I am currently founding a startup which leads me to a very busy life. While I read all the issues and emails you guys send me, I can't reply to everyone. The project is Free and Open Sourced so anyone can participate, please feel free to submit any Pull Requests, I review and approve them quickly._
 
 
-Changelog
-------------------
+## Changelog
+
 #### 1.4.6
 - Several bugfixes and optimizations (thanks @Electrenator, @shacharmo)
 
