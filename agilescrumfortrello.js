@@ -26,41 +26,50 @@ $( d ).ready(function(){
 
 AST = (function ( A ) {
 
-	var appName 			= 'Agile SCRUM for Trello boards',
-		appVersion 			= '1.4.3',
+	var appName 				= 'Agile SCRUM for Trello boards',
+		appVersion 				= '1.4.3',
 
-		regexFraction 		= /\([0-9\.]{1,6}\/[0-9\.]{1,6}\)/,
-		regexFractionDone 	= /\([0-9\.]{1,6}\//,
-		regexFractionTotal 	= /\/[0-9\.]{1,6}\)/,
-		regexNumberTotal 	= /\([0-9\.]{1,5}\)/,
-		regexNumeric 		= /[0-9\.]+/,
-		regexProjectTag 	= /\[([\u3400-\uFAFF\u3040-\u30ff\uff65-\uffdca-zA-ZæÆåáãàâäéèẽêëíìĩîïøóòõôöúùũûüçÅÁÃÀÂÄÉÈẼÊËÍÌĨÎÏØÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
-		regexHeader			= />\*{3} .+ \*{3}$/i,
-		regexShortLink 		= /c\/([^/]+)\/.+/g,
+		regexFraction 			= /\([0-9\.]{1,6}\/[0-9\.]{1,6}\)/,
+		regexFractionDone 		= /\([0-9\.]{1,6}\//,
+		regexFractionTotal 		= /\/[0-9\.]{1,6}\)/,
+		regexCheckboxDone		= /[0-9]{1,6}\//,
+		regexCheckboxTotal		= /\/[0-9]{1,6}/,
+		regexNumberTotal 		= /\([0-9\.]{1,5}\)/,
+		regexNumeric 			= /[0-9\.]+/,
+		regexProjectTag 		= /\[([\u3400-\uFAFF\u3040-\u30ff\uff65-\uffdca-zA-ZæÆåáãàâäéèẽêëíìĩîïøóòõôöúùũûüçÅÁÃÀÂÄÉÈẼÊËÍÌĨÎÏØÓÒÕÔÖÚÙŨÛÜÇ0-9 \_\-\.\#]*)\]/g,
+		regexHeader				= />\*{3} .+ \*{3}$/i,
+		regexShortLink 			= /c\/([^/]+)\/.+/g,
 
-		storyPointDecimals 	= 1,
+		storyPointDecimals 		= 1,
 
-		bodyColor 			= false,
-		bodyWidth           = 0,
-		cssStoryPoints 		= '',
+		bodyColor 				= false,
+		bodyWidth           	= 0,
+		cssStoryPoints 			= '',
 
-		runTimer 			= false,
-		runTimerInterval 	= 5000,
-		runTimerChecksum 	= 0,
+		runTimer 				= false,
+		runTimerInterval 		= 5000,
+		runTimerChecksum 		= 0,
 
-		currentListElement 	= false,
-		currentListDone 	= 0,
-		currentListTotal 	= 0,
+		currentListElement 		= false,
+		currentListDone 		= 0,
+		currentListTotal 		= 0,
 
-		currentHeaderElement = false,
-		currentHeaderDone 	= 0,
-		currentHeaderTotal 	= 0,
+		currentHeaderElement	= false,
+		currentHeaderDone 		= 0,
+		currentHeaderTotal 		= 0,
 
-		currentCardElement 	= false,
-		currentCardDone 	= 0,
-		currentCardTotal 	= 0,
-		currentCardTitle 	= false,
-		currentCardFraction = false;
+		currentCardElement 		= false,
+		currentCardDone 		= 0,
+		currentCardTotal 		= 0,
+		currentCardRemainder	= 0,
+		currentCardTitle 		= false,
+		currentCardFraction 	= false,
+
+		currentCheckListBadge	= false,
+		currentCheckFraction	= false,
+		currentCheckDone 		= 0,
+		currentCheckWeight		= 0,
+		currentCheckTotal		= 0;
 
 
 
@@ -197,7 +206,22 @@ AST = (function ( A ) {
 					}
 
 
+					// Get checklist badge
+					currentCheckListBadge = currentCardElement.find('.js-checkitems-badge');
 
+					// Check if card has checklist and fraction value is not overrun or perfect
+					if ( currentCardTotal >= currentCardDone && _hasCardAChecklist(currentCheckListBadge) )
+					{
+						// Get total checked and unchecked checkboxes
+						currentCheckFraction = currentCheckListBadge.find('.js-checkitems-badge-text')[0].innerHTML;
+						currentCheckDone = _getNumber( currentCheckFraction.match( regexCheckboxDone )[0] );
+						currentCheckTotal = _getNumber( currentCheckFraction.match( regexCheckboxTotal )[0] );
+
+						// Add checkbox done points with same weight to currentCartDone
+						currentCardRemainder = currentCardTotal - currentCardDone; // Keep fraction Story Points in mind
+						currentCheckWeight = currentCardRemainder / currentCheckTotal;
+						currentCardDone += currentCheckWeight * currentCheckDone;
+					}
 
 
 					// Card formatting
@@ -308,6 +332,15 @@ AST = (function ( A ) {
 		var _isCardAHeader = function( title )
 		{
 			return title.match( regexHeader );
+		};
+
+
+		/**
+		 * Checks if card has a checkbox
+		 */
+		var _hasCardAChecklist = function ( currentCardCheckListBadge )
+		{
+			return currentCardCheckListBadge.length === 1;
 		};
 
 
